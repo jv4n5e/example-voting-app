@@ -13,7 +13,7 @@ services:
       restart_policy:
         condition: on-failure
   db:
-    image: postgres:9.4
+    build: db
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "postgres"
